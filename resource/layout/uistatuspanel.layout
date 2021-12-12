@@ -32,30 +32,11 @@ font-size = 17 [$OSX]
 	}
 	
 	layout {
-		region {
-			name=statusregion
-			x=12
-			y=6
-			width=max
-			height=max
-			margin-bottom=12
-		}
+		region { name=statusregion x=12 y=6 width=256 height=max margin-bottom=12 }
 		
-		place {
-			control=StatusDownloading,StatusPaused,StatusComplete
-			region=statusregion
-			align=left
-			dir=right
-			height=max
-			margin-top=0
-		}
-		
-		place {
-			control=StatusProgressbar
-			region=statusregion
-			align=bottom
-			width=300
-			height=4
-		}
+	  	place { control="StatusDownloading" region="statusregion" align="left" margin-top=2 }
+		place { control="StatusPaused, StatusComplete" region="statusregion" align="right" margin-top=2 }
+
+		place { control=StatusProgressbar region=statusregion align=bottom width=300 height=4 }
 	}
 }
