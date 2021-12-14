@@ -1,0 +1,45 @@
+"resource/layout/subpaneloptionsingame.layout"
+{
+	styles {
+		highlight {
+			textcolor=color__headingText
+			font-family=font__mediumfont
+			font-size = 30
+				font-size = 25 [$LINUX]
+				font-size = 31 [$OSX]
+			
+			font-style=normal
+		}
+	}
+	layout
+	{
+		region { name=top x=24 y=24 width=max height=max margin-right=24 }
+		region { name=middle x=24 y=82 width=max height=max margin-right=24 }
+		region { name=box x=24 y=256 width=max height=max }
+		region { name=bottomleft region=box width=255 margin-right=20 height=max}
+		region { name=bottomright region=box x=263 width=235 height=max }
+
+		place { controls=TitleLabel style=highlight region=top }
+
+		place { control="LibraryDisplaySizeLabel" y=0 width=max region=middle }
+
+		place { control="LibraryDisplaySizeAutomatic" x=10 y=20 width=max region=middle }
+		place { control="LibraryDisplaySizeAutomaticLabel" x=40 y=40 width=max region=middle }
+
+		place { control="LibraryDisplaySizeSmall" x=10 y=60 dir=down width=max region=middle }
+		place { control="LibraryDisplaySizeMedium" x=10 y=85 width=max region=middle }
+		place { control="LibraryDisplaySizeLarge" x=10 y=110 width=max region=middle }
+
+		place { control=LibraryLowBandwidthCheckbox align=top width=max region=bottomleft }
+		place { control=LibraryLowBandwidthLabel start=LibraryLowBandwidthCheckbox dir=down width=max height=200 align=top margin-top=5 margin-left=30 region=bottomleft}
+
+		place { control=LibraryLowPerfCheckbox align=top width=max region=bottomright }
+		place { control=LibraryLowPerfLabel start=LibraryLowPerfCheckbox dir=down width=max height=200 align=top margin-top=5 margin-left=30 region=bottomright}
+
+		place { control=LibraryDisableCommunityContentCheckbox y=100 width=max region=bottomleft }
+		place { control=LibraryDisableCommunityContentLabel start=LibraryDisableCommunityContentCheckbox dir=down width=max height=200 align=top margin-top=5 margin-left=30 region=bottomleft}
+
+		place { control=LibraryDisplayIconInGameListCheckbox y=100 width=max region=bottomright }
+
+	}
+}

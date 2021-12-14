@@ -1,8 +1,8 @@
 "resource/layout/settingsdialog.layout" {
 	styles {
 		CDialogSettings {
-			minimum-width=800
-			minimum-height=609
+			minimum-width=840
+			minimum-height=620
 
 			render {
 				0="fill(x0,y1-58,x1,y1-57, color__divider)"
@@ -25,7 +25,7 @@
 			font-size = 16 [$LINUX]
 			font-size = 19 [$OSX]
 			
-			minimum-width=239
+			minimum-width=196
 			minimum-height=517
 			inset="0 -3 0 0"
 			padding-left=18
@@ -64,7 +64,7 @@
 
 		place {
 			control=settingslist
-			width=239
+			width=196
 			height=max
 			region=body
 		}

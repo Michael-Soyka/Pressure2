@@ -10,8 +10,8 @@
 			}
 
 			render_bg {
-				0="image(x0+26,y0+27,x1,y1, graphics/icons/settings/privacy)"
-				1="image(x0+26,y0+119,x1,y1, graphics/icons/settings/host)"
+				0="image(x0,y0+27,x1,y1, graphics/icons/settings/privacy)"
+				1="image(x0,y0+119,x1,y1, graphics/icons/settings/host)"
 			}
 		}
 
@@ -34,7 +34,7 @@
 		
 		region {
 			name=privacy
-			x=82
+			x=56
 			y=0
 			width=max
 			height=114
@@ -89,7 +89,7 @@
 
 		region {
 			name=broadcast
-			x=82
+			x=56
 			y=92
 			width=max
 			height=max

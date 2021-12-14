@@ -5,7 +5,7 @@
 				0="fill(x0+70,y0+20,x0+396,y0+45, color__backgroundOverlay__secondary)"
 			}
 			render_bg {
-				0="image(x0+26,y0+27,x1,y1, graphics/icons/settings/webbrowser)"
+				0="image(x0,y0+27,x1,y1, graphics/icons/settings/webbrowser)"
 			}
 		}
 
@@ -24,7 +24,7 @@
 
 		region {
 			name=browser
-			x=82
+			x=56
 			y=0
 			width=max
 			height=max

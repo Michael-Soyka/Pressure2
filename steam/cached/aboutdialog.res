@@ -14,7 +14,7 @@
 		}
 
 		place {
-			control=Label2,Label1,Label3,Label4,URLLabel1
+			control=Label2,WebsiteURL,Label1,Label3,Label4,URLLabel1
 			dir=down
 			x=24
 			y=137

@@ -11,10 +11,10 @@
 				0="fill(x0+71,y0+168,x1,y0+169, color__divider)"
 				1="fill(x0+71,y0+302,x1,y0+303, color__divider)"
 				2="fill(x0+71,y0+418,x1,y0+419, color__divider)"
-				3="image(x0+26,y0+27,x1,y1, graphics/icons/settings/overlay)"
-				4="image(x0+26,y0+179,x1,y1, graphics/icons/settings/screenshots)"
-				5="image(x0+26,y0+320,x1,y1, graphics/icons/settings/fps)"
-				6="image(x0+26,y0+436,x1,y1, graphics/icons/settings/server)"
+				3="image(x0,y0+27,x1,y1, graphics/icons/settings/overlay)"
+				4="image(x0,y0+179,x1,y1, graphics/icons/settings/screenshots)"
+				5="image(x0,y0+320,x1,y1, graphics/icons/settings/fps)"
+				6="image(x0,y0+436,x1,y1, graphics/icons/settings/server)"
 			}
 
 			render [$OSX&&$LINUX] {
@@ -27,10 +27,10 @@
 				0="fill(x0+71,y0+125,x1,y0+126, color__divider)"
 				1="fill(x0+71,y0+276,x1,y0+277, color__divider)"
 				2="fill(x0+71,y0+392,x1,y0+393, color__divider)"
-				3="image(x0+26,y0+27,x1,y1, graphics/icons/settings/overlay)"
-				4="image(x0+26,y0+140,x1,y1, graphics/icons/settings/screenshots)"
-				5="image(x0+26,y0+294,x1,y1, graphics/icons/settings/fps)"
-				6="image(x0+26,y0+410,x1,y1, graphics/icons/settings/server)"
+				3="image(x0,y0+27,x1,y1, graphics/icons/settings/overlay)"
+				4="image(x0,y0+140,x1,y1, graphics/icons/settings/screenshots)"
+				5="image(x0,y0+294,x1,y1, graphics/icons/settings/fps)"
+				6="image(x0,y0+410,x1,y1, graphics/icons/settings/server)"
 			}
 		}
 
@@ -59,7 +59,7 @@
 
 		region {
 			name=shortcut
-			x=82
+			x=56
 			y=0
 			width=max
 			height=125
@@ -95,7 +95,7 @@
 
 		region {
 			name=screenshot
-			x=82
+			x=56
 			y=152
 			y=113 [$OSX&&$LINUX]
 			width=max
@@ -149,7 +149,7 @@
 
 		region {
 			name=fps
-			x=82
+			x=56
 			y=293
 			y=267 [$OSX&&$LINUX]
 			width=max
@@ -185,7 +185,7 @@
 
 		region {
 			name=server
-			x=82
+			x=56
 			y=409
 			y=383 [$OSX&&$LINUX]
 			width=max

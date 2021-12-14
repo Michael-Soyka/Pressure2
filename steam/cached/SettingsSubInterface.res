@@ -3,14 +3,14 @@
 		CSubPanelOptionsInterface {
 			render_bg {
 				0="fill(x0+71,y0+184,x1,y0+165, color__divider)"
-				1="image(x0+26,y0+27,x1,y1, graphics/icons/settings/pc)"
-				2="image(x0+26,y0+203,x1,y1, graphics/icons/settings/appearance)"
+				1="image(x0,y0+27,x1,y1, graphics/icons/settings/pc)"
+				2="image(x0,y0+203,x1,y1, graphics/icons/settings/appearance)"
 			}
 
 			render_bg [$OSX] {
 				0="fill(x0+71,y0+90,x1,y0+91, color__divider)"
-				1="image(x0+26,y0+27,x1,y1, graphics/icons/settings/pc)"
-				2="image(x0+26,y0+109,x1,y1, graphics/icons/settings/appearance)"
+				1="image(x0,y0+27,x1,y1, graphics/icons/settings/pc)"
+				2="image(x0,y0+109,x1,y1, graphics/icons/settings/appearance)"
 			}
 		}
 	}
@@ -23,7 +23,7 @@
 
 		region {
 			name=system
-			x=82
+			x=56
 			y=0
 			width=max
 			height=184
@@ -52,9 +52,9 @@
 
 		region {
 			name=steam
-			x=82
+			x=56
 			y=156
-			y=82 [$OSX]
+			y=56 [$OSX]
 			width=max
 			height=114
 			margin-right=29

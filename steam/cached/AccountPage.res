@@ -2,14 +2,14 @@
 	styles {
 		CAccountPage {
 			render_bg {
-				0="fill(x0+71,y0+113,x1,y0+114, color__divider)"
-				1="fill(x0+71,y0+213,x1,y0+214, color__divider)"
-				2="fill(x0+71,y0+278,x1,y0+279, color__divider)"
-				3="image(x0+26,y0+27,x1,y1, graphics/icons/settings/account)"
-				4="image(x0+26,y0+127,x1,y1, graphics/icons/settings/email)"
-				5="image(x0+26,y0+227,x1,y1, graphics/icons/settings/vac)"
-				6="image(x0+26,y0+290,x1,y1, graphics/icons/settings/security)"
-				7="image(x0+26,y0+431,x1,y1, graphics/icons/settings/beta)"
+				0="fill(x0+60,y0+113,x1,y0+114, color__divider)"
+				1="fill(x0+60,y0+213,x1,y0+214, color__divider)"
+				2="fill(x0+60,y0+278,x1,y0+279, color__divider)"
+				3="image(x0,y0+27,x1,y1, graphics/icons/settings/account)"
+				4="image(x0,y0+127,x1,y1, graphics/icons/settings/email)"
+				5="image(x0,y0+227,x1,y1, graphics/icons/settings/vac)"
+				6="image(x0,y0+290,x1,y1, graphics/icons/settings/security)"
+				7="image(x0,y0+431,x1,y1, graphics/icons/settings/beta)"
 			}
 		}
 	}
@@ -22,11 +22,11 @@
 
 		region {
 			name=account
-			x=82
+			x=56
 			y=0
 			width=max
 			height=114
-			margin-right=29
+			margin-right=15
 		}
 
 		place {
@@ -55,11 +55,11 @@
 
 		region {
 			name=email
-			x=82
+			x=56
 			y=100
 			width=max
 			height=100
-			margin-right=29
+			margin-right=15
 		}
 
 		place {
@@ -81,11 +81,11 @@
 
 		region {
 			name=vac
-			x=82
+			x=56
 			y=200
 			width=max
 			height=100
-			margin-right=29
+			margin-right=15
 		}
 
 		place {
@@ -98,11 +98,11 @@
 
 		region {
 			name=security
-			x=82
+			x=56
 			y=263
 			width=max
 			height=127
-			margin-right=29
+			margin-right=15
 		}
 
 		place {
@@ -140,11 +140,11 @@
 
 		region {
 			name=beta
-			x=82
+			x=56
 			y=405
 			width=max
 			height=88
-			margin-right=29
+			margin-right=15
 		}
 
 		place {

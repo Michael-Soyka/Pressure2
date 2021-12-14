@@ -2,9 +2,9 @@
 	styles {	
 		CSettingsSubMusic {
 			render_bg {
-				0="image(x0+26,y0+27,x1,y1, graphics/icons/settings/music)"
-				1="image(x0+26,y0+212,x1,y1, graphics/icons/settings/libraries)"
-				2="image(x0+26,y0+391,x1,y1, graphics/icons/settings/notifications)"
+				0="image(x0,y0+27,x1,y1, graphics/icons/settings/music)"
+				1="image(x0,y0+212,x1,y1, graphics/icons/settings/libraries)"
+				2="image(x0,y0+391,x1,y1, graphics/icons/settings/notifications)"
 			}
 		}
 
@@ -32,7 +32,7 @@
 		
 		region {
 			name=library
-			x=82
+			x=56
 			y=0
 			width=max
 			height=172
@@ -96,7 +96,7 @@
 			name=database
 			height=172
 			width=max
-			x=82
+			x=56
 			y=185
 			margin-right=29
 		}
@@ -139,7 +139,7 @@
 
 		region {
 			name=notifications			
-			x=82
+			x=56
 			y=373
 			width=max
 			height=172

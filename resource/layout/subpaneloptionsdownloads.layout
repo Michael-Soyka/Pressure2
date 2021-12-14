@@ -10,9 +10,9 @@
 
 		CSubPanelOptionsDownloads {
 			render_bg {
-				0="image(x0+26,y0+17,x1,y1, graphics/icons/settings/libraries)"
-				1="image(x0+26,y0+109,x1,y1, graphics/icons/settings/webbrowser)"
-				2="image(x0+26,y0+191,x1,y1, graphics/icons/settings/downloads)"
+				0="image(x0,y0+17,x1,y1, graphics/icons/settings/libraries)"
+				1="image(x0,y0+109,x1,y1, graphics/icons/settings/webbrowser)"
+				2="image(x0,y0+191,x1,y1, graphics/icons/settings/downloads)"
 			}
 		}
 	}
@@ -25,11 +25,11 @@
 
 		region {
 			name=contentlibrary
-			x=82
+			x=56
 			y=0
 			width=max
 			height=114
-			margin-right=29
+			margin-right=15
 		}
 
 		place {
@@ -52,7 +52,7 @@
 		place {
 			control=Divider1
 			align=left
-			x=71
+			x=60
 			y=90
 			width=max
 			height=1
@@ -60,11 +60,11 @@
 
 		region {
 			name=regions
-			x=82
+			x=56
 			y=82
 			width=max
 			height=114
-			margin-right=29
+			margin-right=15
 		}
 
 		place {
@@ -87,7 +87,7 @@
 		place {
 			control=Divider2
 			align=left
-			x=71
+			x=60
 			y=172
 			width=max
 			height=1
@@ -95,102 +95,35 @@
 
 		region {
 			name=restrictions
-			x=82
-			y=163
-			height=114
+			x=56
+			y=164
+			height=256
 			width=max
-			margin-right=29
+			margin-right=15
 		}
 
-		place {
-			control=ThrottleRatesLabel
-			region=restrictions
-			dir=down
-			y=28
-		}
-
-		place {
-			control=ThrottleRates
-			start=ThrottleRatesLabel
-			dir=down
-			y=4
-			width=350
-			height=34
-		}
-
-		place {
-			control=AutoUpdateTimeRestrictCheckbox
-			start=ThrottleRates
-			dir=down
-			y=8
-			height=18
-		}
-
-		place {
-			control=AutoUpdateTimeRestrictStartLabel
-			start=AutoUpdateTimeRestrictCheckbox
-			dir=down
-			y=8
-			width=170
-		}
-
-		place {
-			control=AutoUpdateTimeRestrictStart
-			start=AutoUpdateTimeRestrictStartLabel
-			dir=down
-			y=4
-			width=170
-			height=34
-		}
-
-		place {
-			control=AutoUpdateTimeRestrictEndLabel
-			start=AutoUpdateTimeRestrictStartLabel
-			dir=right
-			x=10
-			width=170
-		}
-
-		place {
-			control=AutoUpdateTimeRestrictEnd
-			start=AutoUpdateTimeRestrictEndLabel
-			dir=down
-			y=4
-			width=170
-			height=34
-		}
-
-		place {
-			control=AllowDownloadsDuringGameplayCheckbox,ThrottleDownloadsWhileStreamingCheckbox,DownloadRatesInBitsCheckbox
-			start=AutoUpdateTimeRestrictStart
-			dir=down
-			y=8
-			height=18
-			spacing=6
-		}
-		place {
-			control=Divider3
-			align=left
-			x=71
-			y=420
-			width=max
-			height=1
-		}
-		place {
-			control=FlushDownloadConfig
-			start=Divider3
-			dir=down
-			y=4
-			width=350
-			height=35
-		}
-		place {
-			control=FlushDownloadConfigLabel
-			start=FlushDownloadConfig
-			dir=down
-			y=4
-			height=18
-		}
+		place { controls="RestrictionsLabel" region=restrictions start=Divider2 dir=down margin-top=15 }
+		
+		place { controls="AutoUpdateTimeRestrictCheckbox" region=restrictions start=RestrictionsLabel dir=down margin-top=4 }
+		place { controls="AutoUpdateTimeRestrictStart" region=restrictions start=AutoUpdateTimeRestrictCheckbox dir=down margin-top=4 width=78 margin-left=10 }
+		place { controls="AutoUpdateTimeRestrictEndLabel" region=restrictions start=AutoUpdateTimeRestrictStart dir=right margin-left=20 }
+		place { controls="AutoUpdateTimeRestrictEnd" region=restrictions start=AutoUpdateTimeRestrictEndLabel dir=right margin-left=10 width=78 }
+		
+		place { controls="ThrottleCheckbox" region=restrictions start=RestrictionsLabel dir=down margin-top=4 margin-left=290 }
+		place { controls="ThrottleRateCurrent" region=restrictions start=ThrottleCheckbox dir=down width=235 height=25 margin-top=4 }
+		place { controls="ThrottleRateEditLabel" region=restrictions start=ThrottleRateCurrent dir=down width=175 height=25 }
+		place { controls="ThrottleRateEdit" region=restrictions start=ThrottleRateEditLabel dir=down width=125 height=25 }
+		place { controls="ThrottleRateEditSuffix" region=restrictions start=ThrottleRateEdit dir=right margin-left=4 margin-top=5 }
+		place { controls="ThrottleRateApply" region=restrictions start=ThrottleRateEdit dir=down width=70 height=25 margin-top=4 }
+		
+		place { controls="AllowDownloadsDuringGameplayCheckbox" region=restrictions start=AutoUpdateTimeRestrictStart dir=down margin-top=10 margin-left=-10 }
+		place { controls="ThrottleDownloadsWhileStreamingCheckbox" region=restrictions start=AllowDownloadsDuringGameplayCheckbox dir=down }
+		place { controls="DownloadRatesInBitsCheckbox" region=box start=ThrottleDownloadsWhileStreamingCheckbox dir=down }
+		
+		place { controls="Divider3" region=restrictions start=DownloadRatesInBitsCheckbox dir=down width=max margin-top=10 }
+		
+		place { controls="FlushDownloadConfig" region=restrictions start=Divider3 margin-top=15 width=235 height=25 dir=down }
+		place { controls="FlushDownloadConfigLabel" region=restrictions start=FlushDownloadConfig margin-top=10 width=max dir=down }
 
 	}
 }
